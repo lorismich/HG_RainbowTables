@@ -19,13 +19,11 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `HG_rainbow_works` (
-
-  `id` 			int(11) 		NOT NULL AUTO_INCREMENT 		COMMENT 'ID or Token',
-  `mail` 		varchar(50) 	NOT NULL 						COMMENT 'Mail',
-  `hash` 		varchar(32) 	NOT NULL 						COMMENT 'Hash',
-  `timestamp` 	int(20) 		NOT NULL 						COMMENT 'Max value set to: Sat, 20 Nov 2286 17:46:39 GMT',
-  `status` 		int(1) 			NOT NULL DEFAULT 0				COMMENT 'Status request flag',
-  
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID or Token',
+  `mail` varchar(50) NOT NULL COMMENT 'Mail',
+  `hash` varchar(32) NOT NULL COMMENT 'Hash',
+  `timestamp` int(20) NOT NULL COMMENT 'Max value set to: Sat, 20 Nov 2286 17:46:39 GMT',
+  `status` int(1) NOT NULL DEFAULT 0 COMMENT 'Status request flag',
   PRIMARY KEY (`id`)
 ) AUTO_INCREMENT=1 ;
 
